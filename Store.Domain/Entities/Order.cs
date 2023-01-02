@@ -17,7 +17,7 @@ namespace Store.Domain.Entities
             Customer = customer;
             Date = DateTime.Now;
             Number = Guid.NewGuid().ToString().Substring(0, 8);
-            Status = EOrderStatus.WaitingDelivery;
+            Status = EOrderStatus.WaitingPayment;
             DeliveryFee = deliveryFee;
             Discount = discount;
             Items = new List<OrderItem>();
