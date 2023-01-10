@@ -31,6 +31,8 @@ namespace Store.Domain.Commands
                .Requires()
                .IsGreaterThan(Customer, 11, "Customer", "Cliente inválido")
                .IsGreaterThan(ZipCode, 8, "ZipCode", "CEP inválido")
+               .IsGreaterThan(PromoCode, 8, "PromoCode", "Codigo de Promoção inválido")
+               .IsEmpty(Items, "Items")
            );
         }
     }
